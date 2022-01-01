@@ -12,4 +12,4 @@ I also REALLY like Vue single file components. The idea of keeping the html, the
 
 ## Why Quasar
 
-Quasar is a super cool framework. The reason I picked it in the first place is because it has a ton of really cool components, so less work for me! On top of that, I really like that Quasar will allow me to use a single codebase to build many types of apps. This one here is obviously a web page, built as a SPA. But there are a lot of other build options that come with the Quasar CLI.
+Quasar is a super cool framework. The reason I picked it in the first place is because it has a ton of really cool components, so less work for me! On top of that, I really like that Quasar will allow me to use a single codebase to build many types of apps. This one here is obviously a web page, built as a SPA. But there are a lot of other build options that come with the Quasar CLI. I also find Quasar's documentation and starter projects extremely helpful and well written.
