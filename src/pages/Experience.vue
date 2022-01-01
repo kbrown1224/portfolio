@@ -1,6 +1,6 @@
 <template>
   <q-page>
-    <div class="q-px-xl q-mr-xl q-pb-md">
+    <div class="q-px-xl q-mr-sm q-pb-md">
       <q-timeline layout="dense" color="secondary">
         <q-timeline-entry heading class="text-primary">Professional Experience</q-timeline-entry>
 

@@ -1,6 +1,6 @@
 <template>
   <q-page class="q-ml-xl q-mt-none q-mr-xl q-mb-xl">
-    <div class="fit column">
+    <div class="fit col">
       <div>
         <h6 class="text-weight-thin">Who am I?</h6>
         <q-separator />
@@ -19,8 +19,8 @@
       <div>
         <h6 class="text-weight-thin">What are my areas of interest?</h6>
         <q-separator />
-        <div class="fit row justify-start items-stretch content-start q-mt-xl">
-          <div v-for="(interest, index) in interests" class="col q-mx-md" :key="index">
+        <div class="fit row justify-around items-stretch content-start q-mt-xl">
+          <div v-for="(interest, index) in interests" class="col-md-3 q-mx-md q-my-sm" :key="index">
             <q-card bordered class="my-card shadow-24 fit">
               <q-card-section>
                 <div class="text-h6 text-center text-white">{{ interest.name }}</div>

@@ -9,7 +9,7 @@
     <q-separator class="q-my-md" />
 
     <div class="row" v-for="(project, index) in projects" :key="index">
-      <div class="col-4">
+      <div class="col-sm-12 col-md-4">
         <q-card class="my-card bg-secondary text-white">
           <q-card-section>
             <div class="text-h6">

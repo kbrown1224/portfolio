@@ -1,7 +1,7 @@
 <template>
   <q-page class="q-mt-xl q-pt-md">
     <div class="fit row inline justify-evenly items-center content-center">
-      <div class="col-4 offset-1 self-stretch q-pl-4">
+      <div class="col-sm-12 col-lg-4 offset-lg-1 self-stretch q-pl-4">
         <h2>
           <span class="text-secondary text-weight-thin">Kip </span>
           <span class="text-primary text-weight-medium">Brown</span>
@@ -24,7 +24,7 @@
           <q-btn round color="primary" icon="fab fa-linkedin-in" href="https://www.linkedin.com/in/kip-brown-903599125/" target="_blank" />
         </div>
       </div>
-      <div class="col-7 self-stretch">
+      <div class="col-7 self-stretch mobile-hide">
         <q-img src="~assets/dev.svg" width="100%" />
       </div>
     </div>
