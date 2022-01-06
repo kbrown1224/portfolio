@@ -1,10 +1,10 @@
 <template>
   <q-page class="q-mt-md q-px-xl">
     <div class="text-h4 text-center text-primary text-weight-thin">
-      Things I build in my (limited) spare time
+      {{ pageHeader}}
     </div>
     <div class="text-subtitle text-center text-primary q-my-sm">
-      It's not much yet, but I'm working on it! Coming soon is a ML powered inventory management system for Etsy shops, a web app for tracking workouts, and a reinforcement learning system with a CLI to test it out.
+      {{ pageSubHeader }}
   </div>
     <q-separator class="q-my-md" />
 
@@ -38,20 +38,15 @@
 
 <script>
 import { defineComponent } from 'vue';
+import projects from '../data/projects';
 
 export default defineComponent({
   name: 'ProjectsPage',
   data() {
     return {
-      projects: [
-        {
-          name: 'My Portfolio',
-          githubRepo: 'https://github.com/kbrown1224/portfolio',
-          description: 'Not much of a description needed here, you are looking at it! This portfolio was build with Vue.js and the Quasar framework.',
-          workInProgress: true,
-          postPage: null,
-        }
-      ]
+      pageHeader: 'Things I build in my (limited) spare time',
+      pageSubHeader: "It's not much yet, but I'm working on it! Coming soon is a ML powered inventory management system for Etsy shops, a web app for tracking workouts, and a reinforcement learning system with a CLI to test it out.",
+      projects: projects
     }
   }
 })
