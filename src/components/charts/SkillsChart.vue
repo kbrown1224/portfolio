@@ -69,9 +69,9 @@ export default {
                     case 3:
                       return 'Getting the Hang of It';
                     case 4:
-                      return 'Very Compfortable';
+                      return 'Very Comfortable';
                     case 5:
-                      return 'Expertise';
+                      return 'Expert';
                   }
                 }
               }
