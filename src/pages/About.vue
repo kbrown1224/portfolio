@@ -63,7 +63,7 @@ export default defineComponent({
         },
         {
           name: 'ML / Dev Ops',
-          description: "I'll admit, this is probably the weakest of my skillsets, but I really like being self sufficient in what I do. In reality, this machine learning model doesn't do much good in a notebook on my computer. Or this app isn't helping anybody running on 127.0.0.1. I enjoy being able to take something that I have built and make it useful by operationalizing whatever it is that I am working on."
+          description: "This is the area where I have the least amount of experience. That being said, I  really like being self sufficient in what I do. In reality, this machine learning model doesn't do much good in a notebook on my computer. Or this app isn't helping anybody running on 127.0.0.1. I enjoy being able to take something that I have built and make it useful by operationalizing whatever it is that I am working on."
         }
       ]
     }
