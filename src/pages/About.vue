@@ -44,7 +44,7 @@
 <script>
 import { defineComponent } from 'vue';
 import SkillsChart from '../components/charts/SkillsChart';
-import interests from '../data/interests';
+import interests from '../data/interests.json';
 
 export default defineComponent({
   name: 'AboutPage',

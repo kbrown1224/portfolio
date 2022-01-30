@@ -38,7 +38,7 @@
 
 <script>
 import { defineComponent } from 'vue';
-import timeline from '../data/timeline'
+import timeline from '../data/timeline.json'
 
 export default defineComponent({
   name: 'ExperiencePage',

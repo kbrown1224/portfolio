@@ -30,7 +30,7 @@
 
           <q-card-actions>
             <q-btn flat :href="project.githubRepo" target="_blank">Github Repo</q-btn>
-            <q-btn v-if="project.postPage" flat :to="{ path: '/posts/' + project.postPage }">Blog Post</q-btn>
+            <q-btn v-if="project.post" flat :to="{ path: `/posts/${project.id}`}">Blog Post</q-btn>
           </q-card-actions>
           </div>
 
@@ -43,7 +43,7 @@
 
 <script>
 import { defineComponent } from 'vue';
-import projects from '../data/projects';
+import projects from '../data/projects.json';
 
 export default defineComponent({
   name: 'ProjectsPage',

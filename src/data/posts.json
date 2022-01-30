@@ -1,0 +1,10 @@
+[
+  {
+    "slug": "ttbc-overview",
+    "filename": "ttbc_overview.md",
+    "date": "January 24, 2022",
+    "title": "Tiny Toes Baby Co Inventory Management System",
+    "subtitle": "Smart Inventory Managemnt for Etsy Sellers",
+    "tags": ["Vue 3", "Quasar", "Python", "FastAPI"]
+  }
+]
