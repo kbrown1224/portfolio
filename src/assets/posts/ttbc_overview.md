@@ -25,12 +25,33 @@ API's, the app pulls transactions and decreases the inventory.
 5. Product sales dashboard to better understand here size, pattern, and product trends (Coming Soon).
 
 # Usage
+As much as I'd like to show you the live running version of the app, I can't (yet). This app currently runs on my raspberry pi's. I'll get around to writing a post on my pi set up. But the point of saying this is that the app is just running on our local network, so screenshots will have to do for now.
 
 ## Inventory
+![Inventory Page](../images/inventory_page.png)
 
-## Product Create
+First is the inventory page. This page is the bread and butter of the app. Its currently a very simple page. It shows all inventory for the shops products, sorting by the current inventory, and highlighting products with low inventory. My wife requested a simple view of this
+information, with a simple way to manually update the inventory from 
+this page.
+
+The inventory column is a column of buttons, which in turn pops a modal 
+for her to quickly update the inventory. This is mainly just for adding new inventory after she orders new products.
+
+![Inventory Modal](../images/inventory_modal.png)
+
+## Add Product
+![Add Product](../images/add_product_sizes.png)
+
+The creation of products is a page for manual data entry. For inventory
+to be tracked at the product level, we needed to create these entities.
+This page collects this data and performs a bit of validaiton, so she
+ends up with cleaner, more consistent data. 
 
 ## Etsy Automation
+This is where the magic happens. As TTBC has grown, the number of products that are moving every day grows as well. That meant more and more manual inventory upkeep as a part of my wife's daily workflow. All this is done using [Etsy's Developer API](https://www.etsy.com/developers/documentation/getting_started/api_basics). 
+
+The suite of endpoints they offer is pretty extensive, I definitely am not using them to their full potential. Our use case is keeping focuses around listings and transactions, and the API's allow us to pull data on both of those things. 
+
 
 # Tech Stack
 
