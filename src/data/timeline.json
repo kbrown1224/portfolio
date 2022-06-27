@@ -24,7 +24,8 @@
         "summary": "Leadership",
         "detail": "Further leadership responsibilities, from interviewing candidates to grow our team, to increased mentorship."
       }
-    ]
+    ],
+    "tools": ["Python", "FastAPI", "Vue.js", "Postgres"]
   },
   {
     "title": "Sr Data Scientist",
