@@ -8,9 +8,9 @@
   </div>
     <q-separator class="q-my-md" />
 
-    <div class="row" v-for="(project, index) in projects" :key="index">
-      <div class="col-sm-12 col-md-4">
-        <q-card class="my-card bg-secondary text-white">
+    <div class="fit row items-stretch">
+      <div class="col-sm-12 col-md-4 q-mx-sm" v-for="(project, index) in projects" :key="index">
+        <q-card class="my-card bg-secondary text-white" :style="{height: '250px'}">
           <q-card-section>
             <div class="text-h6">
               {{ project.name }}
@@ -22,14 +22,19 @@
             </div>
           </q-card-section>
 
+          
           <q-card-section>{{ project.description }}</q-card-section>
 
+          <div class="card-actions">
           <q-separator dark />
 
           <q-card-actions>
             <q-btn flat :href="project.githubRepo" target="_blank">Github Repo</q-btn>
-            <q-btn v-if="project.postPage" flat :href="project.postPage">Blog Post</q-btn>
+            <q-btn v-if="project.post" flat :to="{ path: `/posts/${project.id}`}">Blog Post</q-btn>
           </q-card-actions>
+          </div>
+
+
         </q-card>
       </div>
     </div>
@@ -38,7 +43,7 @@
 
 <script>
 import { defineComponent } from 'vue';
-import projects from '../data/projects';
+import projects from '../data/projects.json';
 
 export default defineComponent({
   name: 'ProjectsPage',
@@ -58,5 +63,11 @@ export default defineComponent({
   width: 400px;
   border-radius: 25px;
   background-image: linear-gradient(to bottom right, $primary, $secondary);
+}
+
+.card-actions {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 </style>
